@@ -23,7 +23,7 @@ All in a **modern, distraction-free UI** designed for focused learning.
 ## ✨ Key Features
 
 - 📘 Full syllabus coverage (24 units)
-- 🧠 Unit-wise practice quizzes
+- 🧠 Unit-wise practice quizzes (500+ MCQs)
 - ⏱️ Real exam simulation (Mock Tests)
 - 📊 Advanced analytics dashboard
 - 🔥 Daily streak & engagement system
