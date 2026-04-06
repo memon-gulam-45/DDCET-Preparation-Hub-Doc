@@ -1,176 +1,243 @@
 # 🚀 DDCET Preparation Hub
 
-> A complete digital platform designed to help Diploma students prepare effectively for the **DDCET (Diploma to Degree Common Entrance Test)** through structured learning, smart practice, and real exam simulations.
+> A modern, full-stack web platform designed to help diploma students prepare effectively for the DDCET exam through structured learning, smart practice, and real exam simulation.
 
 🌐 **Live Demo:** https://ddcet-prep-hub.vercel.app/
 
 ---
 
-## 📌 About The Project
+## 🎯 Problem Statement
 
-**DDCET Preparation Hub** is a full-stack web application built to solve a real problem — lack of structured, engaging, and analytics-driven preparation platforms for DDCET aspirants.
+Preparing for DDCET requires:
+- Structured syllabus coverage  
+- Consistent practice  
+- Real exam simulation  
+- Performance tracking  
 
-It provides:
-- 📚 Complete syllabus coverage  
+Most students lack a **single platform** that provides all of this.
+
+---
+
+## 💡 Solution
+
+**DDCET Preparation Hub** provides:
+- 📚 Complete theory coverage (24 units)  
 - 🧠 Smart practice system  
-- 🎯 Real exam-like mock tests  
-- 📊 Deep performance insights  
-
-All in a **modern, distraction-free UI** designed for focused learning.
+- 📝 Real exam-like mock tests  
+- 📊 Data-driven performance insights  
+- 🔥 Engagement features like streak tracking  
 
 ---
 
 ## ✨ Key Features
 
-- 📘 Full syllabus coverage (24 units)
-- 🧠 Unit-wise practice quizzes (500+ MCQs)
-- ⏱️ Real exam simulation (Mock Tests)
-- 📊 Advanced analytics dashboard
-- 🔥 Daily streak & engagement system
-- 📱 PWA support (Installable App)
-- 🔐 Secure authentication system
-- 🌙 Clean UI with dark/light theme
+### 📚 Learning System
+- Complete theory coverage of all subjects & units  
+- Clean Markdown-based reading experience  
+- Unit-wise structured learning  
+
+---
+
+### 🧠 Practice & Testing
+- Unit-wise quizzes for targeted preparation  
+- Full-length mock tests (DDCET pattern)  
+- Resume capability for interrupted sessions  
+
+---
+
+### 📊 Performance Tracking
+- Accuracy tracking  
+- Attempt history  
+- Visual analytics (charts & graphs)  
+
+---
+
+### 🔐 Authentication System
+- Secure Login / Register  
+- JWT-based authentication  
+- Persistent sessions (up to 30 days)  
+
+---
+
+### 📧 Forgot Password (OTP System)
+- Email-based OTP verification using Nodemailer  
+- Secure hashed OTP storage  
+- Auto-deletion after verification  
+
+---
+
+### 🔥 Engagement System
+- Daily streak tracking  
+- Motivation-driven UI  
+
+---
+
+### 🎨 UI/UX Highlights
+- 3D animated backgrounds (Vanta.js)  
+- Smooth animations (Framer Motion)  
+- Glassmorphism UI  
+- Fully responsive design  
+
+---
+
+### ⚙️ Technical Features
+- Progressive Web App (PWA)  
+- Offline-ready support  
+- Optimized performance  
+- Handles **15,000+ users (scalable architecture)**  
 
 ---
 
 ## 🧭 Product Walkthrough
 
-1. **User Registration & Login**
-   - Secure authentication with persistent sessions
-
-2. **Study Module**
-   - Browse subjects → Units → Read structured theory
-   - Track completion & revision progress
-
-3. **Practice Module**
-   - Attempt unit-wise quizzes
-   - Resume anytime (LocalStorage powered)
-
-4. **Mock Test System**
-   - 100 MCQs | 150 minutes
-   - Real DDCET exam simulation
-
-5. **Insights Dashboard**
-   - Analyze performance with charts & history
-   - Track improvement over time
+### 👋 Welcome Experience
+- Interactive 3D animated landing page  
+- Smart CTA based on device:
+  - Android → Download APK  
+  - iOS → PWA install guide  
+  - Desktop → Continue on Web  
 
 ---
 
-## 🖥️ UI/UX Highlights
-
-- 🎨 Interactive 3D backgrounds using **Vanta.js**
-- ⚡ Smooth animations via **Framer Motion**
-- 📱 Fully responsive (Mobile-first)
-- 🧊 Glassmorphism + modern design system
-- 🧭 Floating navigation with intuitive UX
+### 🔐 Authentication Flow
+- User registers / logs in  
+- Forgot password via OTP email  
+- Protected routes activated after login  
 
 ---
 
-## 🏗️ Tech Stack
+### 🏠 Dashboard (Home)
+- Personalized greeting  
+- Global progress tracking  
+- Streak monitoring system  
+- Performance overview cards  
 
-### Frontend
-- React.js
-- Tailwind CSS
-- Framer Motion
-- Recharts
-- Axios
-- React Router DOM
-- KaTeX (Math rendering)
-- Swiper.js
-- Sonner (Notifications)
-- Vanta.js
+---
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB + Mongoose
-- JWT Authentication
-- Nodemailer (OTP Email System)
+### 📚 Study Module
+- Subject-wise navigation  
+- Unit-based learning  
+- Markdown-based theory viewer  
 
-### Deployment
+#### Smart Learning Logic:
+- ⏱️ 30-sec reading requirement before marking complete  
+- 🔄 6-hour cooldown for revision  
+- 📈 Tracks number of reads per unit  
+
+---
+
+### 🧠 Practice Module
+
+#### 📌 Quizzes
+- Unit-based questions  
+- No timer (focus on learning)  
+- Resume using Local Storage  
+
+#### 📝 Mock Tests
+- 100 MCQs | 150 minutes  
+- Resume / restart options  
+- Real exam simulation  
+
+---
+
+### 📊 Insights Dashboard
+
+- 📈 Quiz Performance Trends (Line Chart)  
+- 📊 Mock Test Analysis (Accuracy breakdown)  
+- 📚 Theory Completion (Stacked Bar Chart)  
+- 📜 Attempt history tracking  
+
+---
+
+## 🏗️ System Architecture
+
+- **Frontend:** React.js + Tailwind CSS  
+- **Backend:** Node.js + Express.js  
+- **Database:** MongoDB  
+- **Communication:** REST APIs  
+
+---
+
+## 🚀 Deployment
+
 - **Frontend:** Vercel  
 - **Backend:** Render  
 - **Database:** MongoDB Atlas  
 
 ---
 
-## 🔐 Core System Features
+## 🛠️ Tech Stack
 
-- JWT-based Authentication
-- Protected Routes
-- OTP-based Password Reset (Email)
-- Persistent Login Sessions
-- Scalable REST API Architecture
-
----
-
-## 📚 Learning System
-
-- 📖 Complete theory coverage of all units
-- 🧩 Unit-wise structured content
-- ⏳ Smart completion logic:
-  - 30-sec minimum reading time
-  - 6-hour revision cooldown
-- 📊 Progress tracking with repetition count
+### Frontend
+- React.js  
+- Tailwind CSS  
+- Axios  
+- Framer Motion  
+- Recharts  
+- Swiper  
+- KaTeX  
+- Lottie  
+- Vanta.js  
 
 ---
 
-## 🧠 Practice & Testing
-
-### Practice Quizzes
-- Subject & unit-based questions
-- No timer → focus on learning
-- Resume anytime (LocalStorage)
-
-### Mock Tests
-- 📝 100 MCQs (DDCET format)
-- ⏱️ 150-minute timer
-- 🔁 Resume / Restart system
+### Backend
+- Node.js  
+- Express.js  
+- MongoDB + Mongoose  
+- JWT Authentication  
+- Nodemailer  
 
 ---
 
-## 📊 Insights & Analytics
+## 📦 Libraries Used
 
-- 📈 Quiz performance tracking (Line charts)
-- 📊 Mock test analysis (Accuracy breakdown)
-- 📚 Theory completion tracking
-- 📜 Attempt history with timestamps
-- 📉 Long-term performance trends
-
----
-
-## 🔥 Engagement Features
-
-- Daily streak system
-- Motivation-driven UI
-- Progress-based feedback
+### 🔧 Backend
+- bcrypt  
+- cookie-parser  
+- cors  
+- dotenv  
+- express  
+- jsonwebtoken  
+- mongodb  
+- mongoose  
+- nodemailer  
 
 ---
 
-## ⚙️ Technical Highlights
-
-- Progressive Web App (PWA)
-- Offline-ready capabilities
-- Fast & optimized performance
-- Handles **15,000+ users data efficiently**
-- Cost-efficient deployment (Free tier infra)
+### 🎨 Frontend
+- react  
+- react-router-dom  
+- axios  
+- framer-motion  
+- recharts  
+- swiper  
+- katex  
+- react-markdown  
+- remark-math  
+- rehype-katex  
+- lottie-react  
+- lucide-react  
+- sonner  
+- vanta  
+- tailwindcss  
 
 ---
 
-## 📁 Project Structure
+## 📁 Folder Structure
 
 <pre>
-├── 📁 backend
+├── backend
 │   ├── controllers
+│   ├── inits (subjects, units, tests)
+│   ├── middlewares
 │   ├── models
 │   ├── routes
-│   ├── middlewares
 │   ├── services
-│   ├── inits (DDCET structured content)
 │   └── app.js
 │
-└── 📁 frontend
-    ├── public (PWA + assets)
+└── frontend
+    ├── public (PWA assets)
     ├── src
     │   ├── components
     │   ├── pages
@@ -181,50 +248,65 @@ All in a **modern, distraction-free UI** designed for focused learning.
 
 ---
 
-## 🧠 Learnings & Challenges
-
-- Designing a **real exam simulation system**
-- Managing complex **state persistence (tests & quizzes)**
-- Building scalable **MongoDB schema for education data**
-- Implementing **secure authentication & OTP system**
-- Creating a balance between **UX + performance**
-
----
-
 ## 🔮 Future Enhancements
 
 ### 🎮 Gamification
-- XP system
-- Level progression
-- Leaderboards
+- XP system  
+- Level progression  
+- Leaderboards  
+
+---
 
 ### 🛠️ Admin Panel
-- Manage users
-- Add/edit content
-- Analytics dashboard
+- Manage users  
+- Add/edit content  
+- Analytics dashboard  
+
+---
 
 ### 💰 Monetization
-- Premium content
-- Subscription model
+- Subscription system  
+- Premium content  
+- Advanced analytics  
+
+---
 
 ### 🤖 Advanced Features
-- AI-based performance analysis
-- Personalized study recommendations
-- Doubt-solving system
+- AI-based performance analysis  
+- Personalized recommendations  
+- Doubt-solving system  
+
+---
+
+## 🧠 Learnings & Highlights
+
+- Built a **scalable full-stack system**  
+- Designed **real exam simulation logic**  
+- Implemented **secure auth with OTP flow**  
+- Created **data-driven analytics dashboards**  
+- Focused on **UX + performance optimization**  
 
 ---
 
 ## ⚠️ Important Note
 
-> 🚨 This repository is **documentation-only**.  
-> The actual source code is maintained in a **private repository**.
+> Ensure **third-party cookies are enabled** in your browser.  
+> Otherwise, authentication and core features may not function properly.
+
+---
+
+## 📘 About This Repository
+
+> ⚠️ This is a **Documentation Repository**.
+
+The actual source code is kept **private**.
 
 If you are:
-- 💼 Recruiter / HR  
+- 💼 HR / Recruiter  
 - 🤝 Contributor  
 - 👨‍💻 Developer interested in collaboration  
 
-📩 Feel free to contact: **memongulam45@gmail.com**
+📩 Contact: **memongulam45@gmail.com**
 
 ---
 
@@ -240,7 +322,8 @@ If you are:
 ## ⭐ Support
 
 If you found this project useful:
-- ⭐ Star the repository  
-- 🔗 Share with others preparing for DDCET  
+- ⭐ Star the repo  
+- 📢 Share with others  
+- 🤝 Reach out for collaboration  
 
 ---
